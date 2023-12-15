@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>02-jdk-bin下相关工具 | RollStones·笔记</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="https://portrait.gitee.com/uploads/avatars/user/605/1817167_rollstone_1610068601.png!avatar60">
+    <meta name="description" content="一点一滴记录，持之以恒学习。">
+    
+    <link rel="preload" href="/assets/css/0.styles.7385e7f5.css" as="style"><link rel="preload" href="/assets/js/app.d9144f6d.js" as="script"><link rel="preload" href="/assets/js/2.37ae8396.js" as="script"><link rel="preload" href="/assets/js/7.8869e8ec.js" as="script"><link rel="prefetch" href="/assets/js/10.2de792d8.js"><link rel="prefetch" href="/assets/js/100.f001da9a.js"><link rel="prefetch" href="/assets/js/101.dc867a39.js"><link rel="prefetch" href="/assets/js/102.195acdd9.js"><link rel="prefetch" href="/assets/js/103.15e1f1fe.js"><link rel="prefetch" href="/assets/js/104.da807df0.js"><link rel="prefetch" href="/assets/js/105.58cc2e29.js"><link rel="prefetch" href="/assets/js/106.e25931e6.js"><link rel="prefetch" href="/assets/js/107.b4b35dfa.js"><link rel="prefetch" href="/assets/js/108.fb96d901.js"><link rel="prefetch" href="/assets/js/109.2a0f6b11.js"><link rel="prefetch" href="/assets/js/11.e0ae94eb.js"><link rel="prefetch" href="/assets/js/110.61222413.js"><link rel="prefetch" href="/assets/js/111.be0996a6.js"><link rel="prefetch" href="/assets/js/112.1a364d14.js"><link rel="prefetch" href="/assets/js/113.3d5eaffb.js"><link rel="prefetch" href="/assets/js/114.43f321e9.js"><link rel="prefetch" href="/assets/js/115.1a240b6f.js"><link rel="prefetch" href="/assets/js/116.4b7753ef.js"><link rel="prefetch" href="/assets/js/117.0b6a493b.js"><link rel="prefetch" href="/assets/js/118.237adc24.js"><link rel="prefetch" href="/assets/js/119.e9d1d737.js"><link rel="prefetch" href="/assets/js/12.818babcb.js"><link rel="prefetch" href="/assets/js/120.d72033cd.js"><link rel="prefetch" href="/assets/js/121.ee195c9f.js"><link rel="prefetch" href="/assets/js/122.49c233c1.js"><link rel="prefetch" href="/assets/js/123.f818c0be.js"><link rel="prefetch" href="/assets/js/124.f34ec6ae.js"><link rel="prefetch" href="/assets/js/125.1d1567e0.js"><link rel="prefetch" href="/assets/js/126.9565eb40.js"><link rel="prefetch" href="/assets/js/127.0da4c68c.js"><link rel="prefetch" href="/assets/js/128.852c8672.js"><link rel="prefetch" href="/assets/js/129.cf315d99.js"><link rel="prefetch" href="/assets/js/13.b6bc2652.js"><link rel="prefetch" href="/assets/js/130.814aa68b.js"><link rel="prefetch" href="/assets/js/131.c68d8ed6.js"><link rel="prefetch" href="/assets/js/132.14828589.js"><link rel="prefetch" href="/assets/js/133.e28b0e25.js"><link rel="prefetch" href="/assets/js/134.5c8b8625.js"><link rel="prefetch" href="/assets/js/135.137dbcb5.js"><link rel="prefetch" href="/assets/js/136.488c258a.js"><link rel="prefetch" href="/assets/js/137.bb3470b4.js"><link rel="prefetch" href="/assets/js/138.963e7285.js"><link rel="prefetch" href="/assets/js/139.5e04a80f.js"><link rel="prefetch" href="/assets/js/14.7344d085.js"><link rel="prefetch" href="/assets/js/140.355355c5.js"><link rel="prefetch" href="/assets/js/141.2b8c1f2c.js"><link rel="prefetch" href="/assets/js/142.c3bcb983.js"><link rel="prefetch" href="/assets/js/143.53ad9675.js"><link rel="prefetch" href="/assets/js/144.a6df48af.js"><link rel="prefetch" href="/assets/js/145.078fa1b8.js"><link rel="prefetch" href="/assets/js/146.9ddfc19e.js"><link rel="prefetch" href="/assets/js/147.9cd639e4.js"><link rel="prefetch" href="/assets/js/148.444a496a.js"><link rel="prefetch" href="/assets/js/149.1f834148.js"><link rel="prefetch" href="/assets/js/15.8b4f0a19.js"><link rel="prefetch" href="/assets/js/150.f0399c93.js"><link rel="prefetch" href="/assets/js/151.770b2ed6.js"><link rel="prefetch" href="/assets/js/152.4f0aacee.js"><link rel="prefetch" href="/assets/js/153.f8df82c6.js"><link rel="prefetch" href="/assets/js/154.eac81cc6.js"><link rel="prefetch" href="/assets/js/155.92743a96.js"><link rel="prefetch" href="/assets/js/156.2880b244.js"><link rel="prefetch" href="/assets/js/157.cc4a0c11.js"><link rel="prefetch" href="/assets/js/158.8bf44fb5.js"><link rel="prefetch" href="/assets/js/159.986f5a88.js"><link rel="prefetch" href="/assets/js/16.80575a0b.js"><link rel="prefetch" href="/assets/js/160.76913b1d.js"><link rel="prefetch" href="/assets/js/161.da8930be.js"><link rel="prefetch" href="/assets/js/162.445f1609.js"><link rel="prefetch" href="/assets/js/163.577a9227.js"><link rel="prefetch" href="/assets/js/164.b088fdb5.js"><link rel="prefetch" href="/assets/js/165.d58831ce.js"><link rel="prefetch" href="/assets/js/166.8658be3e.js"><link rel="prefetch" href="/assets/js/167.71cccdd6.js"><link rel="prefetch" href="/assets/js/168.c1ea18da.js"><link rel="prefetch" href="/assets/js/169.be170a86.js"><link rel="prefetch" href="/assets/js/17.a13eca2b.js"><link rel="prefetch" href="/assets/js/170.08aaca48.js"><link rel="prefetch" href="/assets/js/171.9c8c6ddc.js"><link rel="prefetch" href="/assets/js/172.fcb6bfd7.js"><link rel="prefetch" href="/assets/js/173.f739c68c.js"><link rel="prefetch" href="/assets/js/174.78720caf.js"><link rel="prefetch" href="/assets/js/175.2569130a.js"><link rel="prefetch" href="/assets/js/176.7e223dbb.js"><link rel="prefetch" href="/assets/js/177.0cecf756.js"><link rel="prefetch" href="/assets/js/178.f8103207.js"><link rel="prefetch" href="/assets/js/179.2245c549.js"><link rel="prefetch" href="/assets/js/18.c5e61a24.js"><link rel="prefetch" href="/assets/js/180.6e0bc22d.js"><link rel="prefetch" href="/assets/js/181.fed77bd0.js"><link rel="prefetch" href="/assets/js/182.812d2b3d.js"><link rel="prefetch" href="/assets/js/183.ef134cb2.js"><link rel="prefetch" href="/assets/js/184.a4312abd.js"><link rel="prefetch" href="/assets/js/185.52a4295a.js"><link rel="prefetch" href="/assets/js/186.10e813fe.js"><link rel="prefetch" href="/assets/js/187.ec71269e.js"><link rel="prefetch" href="/assets/js/188.62fa3814.js"><link rel="prefetch" href="/assets/js/189.013df69e.js"><link rel="prefetch" href="/assets/js/19.de97d44f.js"><link rel="prefetch" href="/assets/js/190.3fa67a4f.js"><link rel="prefetch" href="/assets/js/191.820f4cd0.js"><link rel="prefetch" href="/assets/js/192.878effaa.js"><link rel="prefetch" href="/assets/js/193.70198a9c.js"><link rel="prefetch" href="/assets/js/194.43ac300f.js"><link rel="prefetch" href="/assets/js/195.0b3de38c.js"><link rel="prefetch" href="/assets/js/196.f37c5f6a.js"><link rel="prefetch" href="/assets/js/197.a70d9271.js"><link rel="prefetch" href="/assets/js/198.a7767623.js"><link rel="prefetch" href="/assets/js/199.49056ec7.js"><link rel="prefetch" href="/assets/js/20.4c9cd3ac.js"><link rel="prefetch" href="/assets/js/200.f79ccb8d.js"><link rel="prefetch" href="/assets/js/201.bd52a247.js"><link rel="prefetch" href="/assets/js/202.77ba6fcc.js"><link rel="prefetch" href="/assets/js/203.3fd38c4a.js"><link rel="prefetch" href="/assets/js/204.493f4aad.js"><link rel="prefetch" href="/assets/js/205.e353e389.js"><link rel="prefetch" href="/assets/js/206.8b8fdbba.js"><link rel="prefetch" href="/assets/js/207.8a96800f.js"><link rel="prefetch" href="/assets/js/208.60a5c2ac.js"><link rel="prefetch" href="/assets/js/209.180dbdee.js"><link rel="prefetch" href="/assets/js/21.0599e6d2.js"><link rel="prefetch" href="/assets/js/210.1dc54834.js"><link rel="prefetch" href="/assets/js/211.d8d9b63d.js"><link rel="prefetch" href="/assets/js/212.1b3fd4a9.js"><link rel="prefetch" href="/assets/js/213.5304adcf.js"><link rel="prefetch" href="/assets/js/214.8f743ba3.js"><link rel="prefetch" href="/assets/js/215.03cc8b66.js"><link rel="prefetch" href="/assets/js/216.ef93b5c4.js"><link rel="prefetch" href="/assets/js/217.0f0bcdae.js"><link rel="prefetch" href="/assets/js/218.24d07b1c.js"><link rel="prefetch" href="/assets/js/219.be460c95.js"><link rel="prefetch" href="/assets/js/22.bf9a1a15.js"><link rel="prefetch" href="/assets/js/220.b74851a0.js"><link rel="prefetch" href="/assets/js/221.9b72aff4.js"><link rel="prefetch" href="/assets/js/222.167895e6.js"><link rel="prefetch" href="/assets/js/223.1cfb108e.js"><link rel="prefetch" href="/assets/js/224.5cc2e228.js"><link rel="prefetch" href="/assets/js/225.6408f8ee.js"><link rel="prefetch" href="/assets/js/226.ffe542c4.js"><link rel="prefetch" href="/assets/js/23.1c869369.js"><link rel="prefetch" href="/assets/js/24.e4024dd4.js"><link rel="prefetch" href="/assets/js/25.e92af0dd.js"><link rel="prefetch" href="/assets/js/26.fbf4967a.js"><link rel="prefetch" href="/assets/js/27.00f4c2bc.js"><link rel="prefetch" href="/assets/js/28.eb06bd91.js"><link rel="prefetch" href="/assets/js/29.3215cbfd.js"><link rel="prefetch" href="/assets/js/3.5aeea859.js"><link rel="prefetch" href="/assets/js/30.4d19b4c0.js"><link rel="prefetch" href="/assets/js/31.60886406.js"><link rel="prefetch" href="/assets/js/32.20886f19.js"><link rel="prefetch" href="/assets/js/33.7a9f6c0a.js"><link rel="prefetch" href="/assets/js/34.07b97846.js"><link rel="prefetch" href="/assets/js/35.d51ade57.js"><link rel="prefetch" href="/assets/js/36.aaa51e62.js"><link rel="prefetch" href="/assets/js/37.83e368c6.js"><link rel="prefetch" href="/assets/js/38.460cc21f.js"><link rel="prefetch" href="/assets/js/39.3d60dbdd.js"><link rel="prefetch" href="/assets/js/4.a63a4070.js"><link rel="prefetch" href="/assets/js/40.74a3069e.js"><link rel="prefetch" href="/assets/js/41.7c72eb0e.js"><link rel="prefetch" href="/assets/js/42.e52eafad.js"><link rel="prefetch" href="/assets/js/43.c2460c21.js"><link rel="prefetch" href="/assets/js/44.49b69202.js"><link rel="prefetch" href="/assets/js/45.ca830dd3.js"><link rel="prefetch" href="/assets/js/46.feff336b.js"><link rel="prefetch" href="/assets/js/47.1c0896a8.js"><link rel="prefetch" href="/assets/js/48.2317a641.js"><link rel="prefetch" href="/assets/js/49.826945bc.js"><link rel="prefetch" href="/assets/js/5.65ca3e83.js"><link rel="prefetch" href="/assets/js/50.4b48afd2.js"><link rel="prefetch" href="/assets/js/51.88824fd2.js"><link rel="prefetch" href="/assets/js/52.695ed89b.js"><link rel="prefetch" href="/assets/js/53.1453e41a.js"><link rel="prefetch" href="/assets/js/54.f138c0e9.js"><link rel="prefetch" href="/assets/js/55.ff80933e.js"><link rel="prefetch" href="/assets/js/56.b5845a07.js"><link rel="prefetch" href="/assets/js/57.5fa3b21f.js"><link rel="prefetch" href="/assets/js/58.1367f3b4.js"><link rel="prefetch" href="/assets/js/59.e423c723.js"><link rel="prefetch" href="/assets/js/6.c5bb8f3e.js"><link rel="prefetch" href="/assets/js/60.96621a38.js"><link rel="prefetch" href="/assets/js/61.7b48947d.js"><link rel="prefetch" href="/assets/js/62.000c3176.js"><link rel="prefetch" href="/assets/js/63.2b52a9f7.js"><link rel="prefetch" href="/assets/js/64.398296e9.js"><link rel="prefetch" href="/assets/js/65.90fdb846.js"><link rel="prefetch" href="/assets/js/66.ef09e78d.js"><link rel="prefetch" href="/assets/js/67.b23ebf2a.js"><link rel="prefetch" href="/assets/js/68.f2432117.js"><link rel="prefetch" href="/assets/js/69.719e9c1c.js"><link rel="prefetch" href="/assets/js/70.9c045b12.js"><link rel="prefetch" href="/assets/js/71.fd154bf9.js"><link rel="prefetch" href="/assets/js/72.392adc49.js"><link rel="prefetch" href="/assets/js/73.bf97d210.js"><link rel="prefetch" href="/assets/js/74.e0ca5bd5.js"><link rel="prefetch" href="/assets/js/75.baf97fc9.js"><link rel="prefetch" href="/assets/js/76.d22cf157.js"><link rel="prefetch" href="/assets/js/77.140a42db.js"><link rel="prefetch" href="/assets/js/78.2cae7a40.js"><link rel="prefetch" href="/assets/js/79.31ace155.js"><link rel="prefetch" href="/assets/js/8.77202eac.js"><link rel="prefetch" href="/assets/js/80.0bcc2452.js"><link rel="prefetch" href="/assets/js/81.f24c2150.js"><link rel="prefetch" href="/assets/js/82.f1676137.js"><link rel="prefetch" href="/assets/js/83.63c5fef8.js"><link rel="prefetch" href="/assets/js/84.8f099aad.js"><link rel="prefetch" href="/assets/js/85.0ff1685a.js"><link rel="prefetch" href="/assets/js/86.8670b4d2.js"><link rel="prefetch" href="/assets/js/87.d7f0e264.js"><link rel="prefetch" href="/assets/js/88.ae445553.js"><link rel="prefetch" href="/assets/js/89.a36446fd.js"><link rel="prefetch" href="/assets/js/9.1ccb07cf.js"><link rel="prefetch" href="/assets/js/90.88609a64.js"><link rel="prefetch" href="/assets/js/91.41480a41.js"><link rel="prefetch" href="/assets/js/92.4007406c.js"><link rel="prefetch" href="/assets/js/93.299c852a.js"><link rel="prefetch" href="/assets/js/94.cd869297.js"><link rel="prefetch" href="/assets/js/95.b55aa66d.js"><link rel="prefetch" href="/assets/js/96.82f921e1.js"><link rel="prefetch" href="/assets/js/97.46c181a7.js"><link rel="prefetch" href="/assets/js/98.a65d6414.js"><link rel="prefetch" href="/assets/js/99.8ab1355c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7385e7f5.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">RollStones·笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/java/" class="nav-link router-link-active">
+  Java
+</a></div><div class="nav-item"><a href="/webkai-fa/" class="nav-link">
+  Web开发
+</a></div><div class="nav-item"><a href="/linux/" class="nav-link">
+  Linux
+</a></div><div class="nav-item"><a href="/js/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><a href="/mian-shi-ti/" class="nav-link">
+  面试题
+</a></div><div class="nav-item"><a href="/javaxing-neng-diao-you-gai-shu/" class="nav-link">
+  Java性能调优概述
+</a></div><div class="nav-item"><a href="/javaxing-neng-diao-you-a-li-/" class="nav-link">
+  Java性能调优 阿里
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/java/" class="nav-link router-link-active">
+  Java
+</a></div><div class="nav-item"><a href="/webkai-fa/" class="nav-link">
+  Web开发
+</a></div><div class="nav-item"><a href="/linux/" class="nav-link">
+  Linux
+</a></div><div class="nav-item"><a href="/js/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><a href="/mian-shi-ti/" class="nav-link">
+  面试题
+</a></div><div class="nav-item"><a href="/javaxing-neng-diao-you-gai-shu/" class="nav-link">
+  Java性能调优概述
+</a></div><div class="nav-item"><a href="/javaxing-neng-diao-you-a-li-/" class="nav-link">
+  Java性能调优 阿里
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Java文档</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JDK</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>工具</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/java/gong-ju/arthas.html" class="sidebar-link">01-Arthas</a></li><li><a href="/java/gong-ju/jdk-binxia-xiang-guan-gong-ju.html" aria-current="page" class="active sidebar-link">02-jdk-bin下相关工具</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/java/gong-ju/jdk-binxia-xiang-guan-gong-ju.html#一、基本工具" class="sidebar-link">一、基本工具</a></li><li class="sidebar-sub-header"><a href="/java/gong-ju/jdk-binxia-xiang-guan-gong-ju.html#二、监控应用" class="sidebar-link">二、监控应用</a></li><li class="sidebar-sub-header"><a href="/java/gong-ju/jdk-binxia-xiang-guan-gong-ju.html#三、安全相关的" class="sidebar-link">三、安全相关的</a></li><li class="sidebar-sub-header"><a href="/java/gong-ju/jdk-binxia-xiang-guan-gong-ju.html#四、案列" class="sidebar-link">四、案列</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_02-jdk-bin下相关工具"><a href="#_02-jdk-bin下相关工具" class="header-anchor">#</a> 02-jdk-bin下相关工具</h1> <h2 id="一、基本工具"><a href="#一、基本工具" class="header-anchor">#</a> 一、基本工具</h2> <p><strong>javac.exe</strong>	-- Java语言编译器
+<strong>java.exe</strong> 	-- Java应用程序启动器，JDK 1.6版里同时用于开发和部署，旧的部署启动器，jre，不在提供
+<strong>javadoc.exe</strong> -- Java API 文档生成器
+<strong>apt.exe</strong> 	-- java 注释处理器
+<strong>appletviewer.exe</strong> -- java applet 小程序查看器<br> <strong>jar.exe</strong> 	-- java文件压缩打包工具
+<strong>jdb.exe</strong>	-- Java 调试器.
+<strong>javah.exe</strong> 	-- C 头文件和stub生成器，用于写本地化方法，例如生产JNI样式的头文件
+<strong>javap.exe</strong>	-- class文件 反编译工具
+<strong>extcheck.exe</strong>	 -- 用于检测jar包中的问题</p> <div class="language-shell extra-class"><pre class="language-shell"><code>C:<span class="token punctuation">\</span>Users<span class="token punctuation">\</span>dong<span class="token operator">&gt;</span>jar --help
+用法: jar <span class="token punctuation">[</span>OPTION<span class="token punctuation">..</span>.<span class="token punctuation">]</span> <span class="token punctuation">[</span> <span class="token punctuation">[</span>--release VERSION<span class="token punctuation">]</span> <span class="token punctuation">[</span>-C dir<span class="token punctuation">]</span> files<span class="token punctuation">]</span> <span class="token punctuation">..</span>.
+jar 创建类和资源的档案, 并且可以处理档案中的单个类或资源或者从档案中还原单个类或资源。
+
+ 示例:
+ <span class="token comment"># 创建包含两个类文件的名为 classes.jar 的档案:</span>
+ jar --create --file classes.jar Foo.class Bar.class
+ <span class="token comment"># 使用现有的清单创建档案, 其中包含 foo/ 中的所有文件:</span>
+ jar --create --file classes.jar --manifest mymanifest -C foo/ <span class="token builtin class-name">.</span>
+ <span class="token comment"># 创建模块化 jar 档案, 其中模块描述符位于</span>
+ <span class="token comment"># classes/module-info.class:</span>
+ jar --create --file foo.jar --main-class com.foo.Main --module-version <span class="token number">1.0</span> -C foo/ classes resources
+ <span class="token comment"># 将现有的非模块化 jar 更新为模块化 jar:</span>
+ jar --update --file foo.jar --main-class com.foo.Main --module-version <span class="token number">1.0</span> -C foo/ module-info.class
+ <span class="token comment"># 创建包含多个发行版的 jar, 并将一些文件放在 META-INF/versions/9 目录中:</span>
+ jar --create --file mr.jar -C foo classes --release <span class="token number">9</span> -C foo9 classes
+
+要缩短或简化 jar 命令, 可以在单独的文本文件中指定参数,
+并使用 @ 符号作为前缀将此文件传递给 jar 命令。
+
+ 示例:
+ <span class="token comment"># 从文件 classes.list 读取附加选项和类文件列表</span>
+ jar --create --file my.jar @classes.list
+
+
+ 主操作模式:
+
+  -c, --create               创建档案
+  -i, --generate-index<span class="token operator">=</span>FILE  为指定的 jar 档案生成索引信息
+  -t, --list                 列出档案的目录
+  -u, --update               更新现有 jar 档案
+  -x, --extract              从档案中提取指定的 <span class="token punctuation">(</span>或全部<span class="token punctuation">)</span> 文件
+  -d, --describe-module      输出模块描述符或自动模块名称
+
+ 在任意模式下有效的操作修饰符:
+
+  -C DIR                     更改为指定的目录并包含以下文件
+  -f, --file<span class="token operator">=</span>FILE            档案文件名。省略时, 基于操作使用 stdin 或 stdout
+      --release VERSION      将下面的所有文件都放在jar 的版本化目录中 <span class="token punctuation">(</span>即 META-INF/versions/VERSION/<span class="token punctuation">)</span>
+  -v, --verbose              在标准输出中生成详细输出
+
+ 在创建和更新模式下有效的操作修饰符:
+
+  -e, --main-class<span class="token operator">=</span>CLASSNAME 捆绑到模块化或可执行jar 档案的独立应用程序的应用程序入口点
+  -m, --manifest<span class="token operator">=</span>FILE        包含指定清单文件中的清单信息
+  -M, --no-manifest          不为条目创建清单文件
+      --module-version<span class="token operator">=</span>VERSION    创建模块化 jar 或更新非模块化 jar 时的模块版本
+      --hash-modules<span class="token operator">=</span>PATTERN 计算和记录模块的散列,这些模块按指定模式匹配并直接或间接依赖于所创建的模块化 jar 或所更新的非模块化 jar
+  -p, --module-path          模块被依赖对象的位置, 用于生成散列
+
+ 只在创建, 更新和生成索引模式下有效的操作修饰符:
+
+  -0, --no-compress          仅存储<span class="token punctuation">;</span> 不使用 ZIP 压缩
+
+ 其他选项:
+
+  -?, -h, --help<span class="token punctuation">[</span>:compat<span class="token punctuation">]</span>    提供此帮助，也可以选择性地提供兼容性帮助
+      --help-extra           提供额外选项的帮助
+      --version              输出程序版本
+
+ 如果模块描述符 <span class="token string">'module-info.class'</span> 位于指定目录的
+ 根目录中, 或者位于 jar 档案本身的根目录中, 则
+ 该档案是一个模块化 jar。以下操作只在创建模块化 jar,
+ 或更新现有的非模块化 jar 时有效: <span class="token string">'--module-version'</span>,
+ <span class="token string">'--hash-modules'</span> 和 <span class="token string">'--module-path'</span>。
+
+ 如果为长选项提供了必需参数或可选参数, 则它们对于
+ 任何对应的短选项也是必需或可选的。
+</code></pre></div><div class="language-shell extra-class"><pre class="language-shell"><code>C:<span class="token punctuation">\</span>Users<span class="token punctuation">\</span>dong<span class="token operator">&gt;</span>javac
+用法: javac <span class="token operator">&lt;</span>options<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>source files<span class="token operator">&gt;</span>
+其中, 可能的选项包括:
+  @<span class="token operator">&lt;</span>filename<span class="token operator">&gt;</span>                  从文件读取选项和文件名
+  -Akey<span class="token punctuation">[</span><span class="token operator">=</span>value<span class="token punctuation">]</span>                传递给注释处理程序的选项
+  --add-modules <span class="token operator">&lt;</span>模块<span class="token operator">&gt;</span><span class="token punctuation">(</span>,<span class="token operator">&lt;</span>模块<span class="token operator">&gt;</span><span class="token punctuation">)</span>* 除了初始模块之外要解析的根模块<span class="token punctuation">;</span> 如果 <span class="token operator">&lt;</span>module<span class="token operator">&gt;</span> 为 ALL-MODULE-<span class="token environment constant">PATH</span>, 则为模块路径中的所有模块。
+  --boot-class-path <span class="token operator">&lt;</span>path<span class="token operator">&gt;</span>, -bootclasspath <span class="token operator">&lt;</span>path<span class="token operator">&gt;</span> 覆盖引导类文件的位置
+  --class-path <span class="token operator">&lt;</span>path<span class="token operator">&gt;</span>, -classpath <span class="token operator">&lt;</span>path<span class="token operator">&gt;</span>, -cp <span class="token operator">&lt;</span>path<span class="token operator">&gt;</span> 指定查找用户类文件和注释处理程序的位置
+  -d <span class="token operator">&lt;</span>directory<span class="token operator">&gt;</span>               指定放置生成的类文件的位置
+  -deprecation                 输出使用已过时的 API 的源位置
+  --enable-preview             启用预览语言功能。要与 -source 或 --release 一起使用。
+  -encoding <span class="token operator">&lt;</span>encoding<span class="token operator">&gt;</span>         指定源文件使用的字符编码
+  -endorseddirs <span class="token operator">&lt;</span>dirs<span class="token operator">&gt;</span>         覆盖签名的标准路径的位置
+  -extdirs <span class="token operator">&lt;</span>dirs<span class="token operator">&gt;</span>              覆盖所安装扩展的位置
+  -g                           生成所有调试信息
+  -g:<span class="token punctuation">{</span>lines,vars,source<span class="token punctuation">}</span>       只生成某些调试信息
+  -g:none                      不生成任何调试信息
+  -h <span class="token operator">&lt;</span>directory<span class="token operator">&gt;</span>               指定放置生成的本机标头文件的位置
+  --help, -help, -?            输出此帮助消息
+  --help-extra, -X             输出额外选项的帮助
+  -implicit:<span class="token punctuation">{</span>none,class<span class="token punctuation">}</span>       指定是否为隐式引用文件生成类文件
+  -J<span class="token operator">&lt;</span>flag<span class="token operator">&gt;</span>                     直接将 <span class="token operator">&lt;</span>标记<span class="token operator">&gt;</span> 传递给运行时系统
+  --limit-modules <span class="token operator">&lt;</span>模块<span class="token operator">&gt;</span><span class="token punctuation">(</span>,<span class="token operator">&lt;</span>模块<span class="token operator">&gt;</span><span class="token punctuation">)</span>* 限制可观察模块的领域
+  --module <span class="token operator">&lt;</span>module-name<span class="token operator">&gt;</span>, -m <span class="token operator">&lt;</span>module-name<span class="token operator">&gt;</span> 只编译指定的模块, 请检查时间戳
+  --module-path <span class="token operator">&lt;</span>path<span class="token operator">&gt;</span>, -p <span class="token operator">&lt;</span>path<span class="token operator">&gt;</span> 指定查找应用程序模块的位置
+  --module-source-path <span class="token operator">&lt;</span>module-source-path<span class="token operator">&gt;</span> 指定查找多个模块的输入源文件的位置
+  --module-version <span class="token operator">&lt;</span>版本<span class="token operator">&gt;</span>        指定正在编译的模块版本
+  -nowarn                      不生成任何警告
+  -parameters                  生成元数据以用于方法参数的反射
+  -proc:<span class="token punctuation">{</span>none,only<span class="token punctuation">}</span>            控制是否执行注释处理和/或编译。
+  -processor <span class="token operator">&lt;</span>class<span class="token operator"><span class="token file-descriptor important">1</span>&gt;</span><span class="token punctuation">[</span>,<span class="token operator">&lt;</span>class<span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span>,<span class="token operator">&lt;</span>class<span class="token operator"><span class="token file-descriptor important">3</span>&gt;</span><span class="token punctuation">..</span>.<span class="token punctuation">]</span> 要运行的注释处理程序的名称<span class="token punctuation">;</span> 绕过默认的搜索进程
+  --processor-module-path <span class="token operator">&lt;</span>path<span class="token operator">&gt;</span> 指定查找注释处理程序的模块路径
+  --processor-path <span class="token operator">&lt;</span>path<span class="token operator">&gt;</span>, -processorpath <span class="token operator">&lt;</span>path<span class="token operator">&gt;</span> 指定查找注释处理程序的位置
+  -profile <span class="token operator">&lt;</span>profile<span class="token operator">&gt;</span>           请确保使用的 API 在指定的配置文件中可用
+  --release <span class="token operator">&lt;</span>release<span class="token operator">&gt;</span>          针对特定 VM 版本进行编译。支持的目标: <span class="token number">6</span>, <span class="token number">7</span>, <span class="token number">8</span>, <span class="token number">9</span>, <span class="token number">10</span>, <span class="token number">11</span>
+  -s <span class="token operator">&lt;</span>directory<span class="token operator">&gt;</span>               指定放置生成的源文件的位置
+  -source <span class="token operator">&lt;</span>release<span class="token operator">&gt;</span>            提供与指定发行版的源兼容性
+  --source-path <span class="token operator">&lt;</span>path<span class="token operator">&gt;</span>, -sourcepath <span class="token operator">&lt;</span>path<span class="token operator">&gt;</span> 指定查找输入源文件的位置
+  --system <span class="token operator">&lt;</span>jdk<span class="token operator">&gt;|</span>none          覆盖系统模块位置
+  -target <span class="token operator">&lt;</span>release<span class="token operator">&gt;</span>            生成特定 VM 版本的类文件
+  --upgrade-module-path <span class="token operator">&lt;</span>path<span class="token operator">&gt;</span> 覆盖可升级模块位置
+  -verbose                     输出有关编译器正在执行的操作的消息
+  --version, -version          版本信息
+  -Werror                      出现警告时终止编译
+</code></pre></div><h2 id="二、监控应用"><a href="#二、监控应用" class="header-anchor">#</a> 二、监控应用</h2> <h3 id="_1、jps-exe"><a href="#_1、jps-exe" class="header-anchor">#</a> 1、<strong>jps.exe</strong></h3> <p>JVM Process Status 进程状态工具，列出目标系统的HotSpot JJVM</p> <h3 id="_2、jstat-jvm性能监控"><a href="#_2、jstat-jvm性能监控" class="header-anchor">#</a> 2、jstat JVM性能监控</h3> <p>JDK自带的一个轻量级小工具，全称“Java Virtual Machine statistics monitoring tool”，主要利用JVM内建的指令对Java应用程序的资源和性能进行实时的命令行的监控，包括了对Heap size和垃圾回收状况的监控。</p> <div class="language- extra-class"><pre class="language-text"><code>C:\Users\dong&gt;jstat
+Usage: jstat --help|-options
+       jstat -&lt;option&gt; [-t] [-h&lt;lines&gt;] &lt;vmid&gt; [&lt;interval&gt; [&lt;count&gt;]]
+
+Definitions:
+  &lt;option&gt;      An option reported by the -options option
+  &lt;vmid&gt;        Virtual Machine Identifier. A vmid takes the following form:
+                     &lt;lvmid&gt;[@&lt;hostname&gt;[:&lt;port&gt;]]
+                Where &lt;lvmid&gt; is the local vm identifier for the target
+                Java virtual machine, typically a process id; &lt;hostname&gt; is
+                the name of the host running the target Java virtual machine;
+                and &lt;port&gt; is the port number for the rmiregistry on the
+                target host. See the jvmstat documentation for a more complete
+                description of the Virtual Machine Identifier.
+  &lt;lines&gt;       Number of samples between header lines.
+  &lt;interval&gt;    Sampling interval. The following forms are allowed:
+                    &lt;n&gt;[&quot;ms&quot;|&quot;s&quot;]
+                Where &lt;n&gt; is an integer and the suffix specifies the units as
+                milliseconds(&quot;ms&quot;) or seconds(&quot;s&quot;). The default units are &quot;ms&quot;.
+  &lt;count&gt;       Number of samples to take before terminating.
+  -J&lt;flag&gt;      Pass &lt;flag&gt; directly to the runtime system.
+  -? -h --help  Prints this help message.
+  -help         Prints this help message.
+</code></pre></div><p>其中options支持:</p> <div class="language- extra-class"><pre class="language-text"><code>C:\Users\dong&gt;jstat -options
+-class
+-compiler
+-gc
+-gccapacity
+-gccause
+-gcmetacapacity
+-gcnew
+-gcnewcapacity
+-gcold
+-gcoldcapacity
+-gcutil
+-printcompilation
+</code></pre></div><h3 id="_3、jstatd-exe-jvm-jstat-的守护进程"><a href="#_3、jstatd-exe-jvm-jstat-的守护进程" class="header-anchor">#</a> 3、<strong>jstatd.exe</strong>  JVM jstat 的守护进程</h3> <h3 id="_4、jhat-堆储存查看器"><a href="#_4、jhat-堆储存查看器" class="header-anchor">#</a> 4、jhat 堆储存查看器</h3> <p>jhat是一个Java heap dump文件浏览器。这个工具分析Java堆复制文件（例如，由上面的 &quot;jmap -dump&quot;所产生的）。Jhat启动一个允许堆中的对象在web浏览器中进行分析的web服务器。这个工具并不是想用于应用系统中而是用于&quot;离线&quot;分 析。“jhat工具是平HIDDEN立的”，其意思是，它可以被用来观察在任何平台上所产生的堆复制。例如，我们有可能在Linux系统上使用jhat来 观察一个在Solaris OS上所产生的堆复制</p> <h3 id="_5、jmap-java内存图"><a href="#_5、jmap-java内存图" class="header-anchor">#</a> 5、jmap Java内存图</h3> <p>主要用于打印指定Java进程(或核心文件、远程调试服务器)的共享对象内存映射或堆内存细节。</p> <p>jmap命令可以获得运行中的jvm的堆的快照，从而可以离线分析堆，以检查内存泄漏，检查一些严重影响性能的大对象的创建，检查系统中什么对象最多，各种对象所占内存的大小等等。可以使用jmap生成Heap Dump。</p> <p>注意：这里的堆是指java进程中的堆，不单单是</p> <h3 id="_6、jstack-java堆栈跟踪"><a href="#_6、jstack-java堆栈跟踪" class="header-anchor">#</a> 6、<strong>jstack</strong>  Java堆栈跟踪</h3> <h3 id="_7、jvisualvm-gui监控工具"><a href="#_7、jvisualvm-gui监控工具" class="header-anchor">#</a> 7、jvisualvm (gui监控工具）</h3> <p>JVM监测、故障排除、分析工具，主要以图形化界面的方式提供运行于指定虚拟机的Java应用程序的详细信息，能够监控线程，内存情况，查看方法的CPU时间和内存中的对 象，已被GC的对象，反向查看分配的堆栈(如100个String对象分别由哪几个对象分配出来的).</p> <p><img src="/assets/img/1.7f067c71.png" alt="img"></p> <h3 id="_8、jconsole-gui监控工具"><a href="#_8、jconsole-gui监控工具" class="header-anchor">#</a> 8、jconsole（gui监控工具）</h3> <p>主要用于监测并显示运行于Java平台上的应用程序的性能和资源占用等信息</p> <p><img src="/assets/img/2.70233eb7.png" alt="img"></p> <h3 id="_9、jmc-gui工具"><a href="#_9、jmc-gui工具" class="header-anchor">#</a> 9、jmc(gui工具）</h3> <p>Java任务控制工具(Java Mission Control)，主要用于HotSpot JVM的生产时间监测、分析、诊断，数据比jvisualvm数据更加丰富</p> <p><img src="/assets/img/3.7fae73d2.png" alt="img"></p> <h2 id="三、安全相关的"><a href="#三、安全相关的" class="header-anchor">#</a> 三、安全相关的</h2> <h3 id="_1、policytool-gui工具"><a href="#_1、policytool-gui工具" class="header-anchor">#</a> 1、policytool：gui工具</h3> <h3 id="_2、keytool-密钥工具"><a href="#_2、keytool-密钥工具" class="header-anchor">#</a> 2、keytool：密钥工具</h3> <h3 id="_3、kinit-klist-ktab-kerberos管理工具"><a href="#_3、kinit-klist-ktab-kerberos管理工具" class="header-anchor">#</a> 3、kinit,klist,ktab：kerberos管理工具</h3> <h3 id="_4、jarsigner-签名-签名校验工具"><a href="#_4、jarsigner-签名-签名校验工具" class="header-anchor">#</a> 4、jarsigner：签名,签名校验工具</h3> <h2 id="四、案列"><a href="#四、案列" class="header-anchor">#</a> 四、案列</h2> <h3 id="一、一行代码-引发的full-gc"><a href="#一、一行代码-引发的full-gc" class="header-anchor">#</a> 一、一行代码 引发的FULL GC</h3> <h3 id="_1-问题描述"><a href="#_1-问题描述" class="header-anchor">#</a> 1.问题描述</h3> <p>**2021年1月27日运维同事发现线上出生证明服务CPU使用报警，经排查后发下系统一直在FULL GC  **</p> <div class="language-tex extra-class"><pre class="language-tex"><code>查看服务器gc命令： jstat -gcutil 进程号 时间间隔
+前提是 执行命令的用户权限 &gt;= 启动java进程用户的权限
+</code></pre></div><p><img src="/assets/img/4.a31665d3.png" alt="img"></p> <p>**同时CPU使用率较高  **</p> <p><img src="/assets/img/5.2907961e.png" alt="img"></p> <p>**同时线上服务器响应时间变长  **</p> <p><img src="/assets/img/6.5871e24a.png" alt="img"></p> <p>**经确认线下没有大规模的活动，没有异常流量进入，排除业务和流量问题后项目组开始排查系统问题  **</p> <h3 id="_2-问题定位"><a href="#_2-问题定位" class="header-anchor">#</a> 2.问题定位</h3> <p>**系统频繁的FULL GC明显不正常，开始排查是否存在内存泄露的情况  **</p> <h4 id="_1-dump-java进程内存"><a href="#_1-dump-java进程内存" class="header-anchor">#</a> 1）dump java进程内存</h4> <p>使用命令</p> <div class="language-shell extra-class"><pre class="language-shell"><code>jmap -dump:live,format<span class="token operator">=</span>b,file<span class="token operator">=</span>heap-dump.bin 进程号
+</code></pre></div><p>将java进程内存快照到问题内，通过堡垒机将内存文件下载到本地</p> <h4 id="_2-使用mat对内存进行分析"><a href="#_2-使用mat对内存进行分析" class="header-anchor">#</a> 2）使用MAT对内存进行分析</h4> <p>MAT的解释以及用法请参考： https://juejin.cn/post/6844903782766084103</p> <p>没有MAT工具的同学可以百度搜索：“MAT”，进入官网下载即可</p> <p><img src="/assets/img/7.1bbf6bae.png" alt="img"></p> <p>打开MAT后将下载好的文件导入到MAT内</p> <p><img src="/assets/img/8.0d5b7389.png" alt="img"></p> <p>导入后发现内存中大对象占比非常大，初步定为存在内存泄露的情况</p> <p><img src="/assets/img/9.b8de819c.png" alt="img"></p> <p>点击 “Leak Suspects （内存泄漏的工具）” 进入内存泄露分析页面</p> <p><img src="/assets/img/10.a242a27f.png" alt="img"></p> <p>进入后发现“PoolingHttpClientConnectionManager”对象实例非常多，内存占用率也达到了96.6%</p> <p><img src="/assets/img/11.475409c9.png" alt="img"></p> <p>点击“Details”进入详情页面，同时将滚动条拉倒最下，检查线程调用栈信息，发现是阿里云OSS客户端
+存在内存泄露</p> <p><img src="/assets/img/12.1d56c0e8.png" alt="img"></p> <p>排查代码是否有使用阿里云OSS客户端，经排查后发现在调用图片上传接口时 “<strong>没有关闭客户端连接</strong>”</p> <p><img src="/assets/img/13.9ecbc87f.png" alt="img"></p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">12/15/2023, 8:18:50 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/java/gong-ju/arthas.html" class="prev">
+        01-Arthas
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d9144f6d.js" defer></script><script src="/assets/js/2.37ae8396.js" defer></script><script src="/assets/js/7.8869e8ec.js" defer></script>
+  </body>
+</html>

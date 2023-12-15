@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>03-SpringBoot 配置全集 | RollStones·笔记</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="https://portrait.gitee.com/uploads/avatars/user/605/1817167_rollstone_1610068601.png!avatar60">
+    <meta name="description" content="一点一滴记录，持之以恒学习。">
+    
+    <link rel="preload" href="/assets/css/0.styles.7385e7f5.css" as="style"><link rel="preload" href="/assets/js/app.d9144f6d.js" as="script"><link rel="preload" href="/assets/js/2.37ae8396.js" as="script"><link rel="preload" href="/assets/js/103.15e1f1fe.js" as="script"><link rel="prefetch" href="/assets/js/10.2de792d8.js"><link rel="prefetch" href="/assets/js/100.f001da9a.js"><link rel="prefetch" href="/assets/js/101.dc867a39.js"><link rel="prefetch" href="/assets/js/102.195acdd9.js"><link rel="prefetch" href="/assets/js/104.da807df0.js"><link rel="prefetch" href="/assets/js/105.58cc2e29.js"><link rel="prefetch" href="/assets/js/106.e25931e6.js"><link rel="prefetch" href="/assets/js/107.b4b35dfa.js"><link rel="prefetch" href="/assets/js/108.fb96d901.js"><link rel="prefetch" href="/assets/js/109.2a0f6b11.js"><link rel="prefetch" href="/assets/js/11.e0ae94eb.js"><link rel="prefetch" href="/assets/js/110.61222413.js"><link rel="prefetch" href="/assets/js/111.be0996a6.js"><link rel="prefetch" href="/assets/js/112.1a364d14.js"><link rel="prefetch" href="/assets/js/113.3d5eaffb.js"><link rel="prefetch" href="/assets/js/114.43f321e9.js"><link rel="prefetch" href="/assets/js/115.1a240b6f.js"><link rel="prefetch" href="/assets/js/116.4b7753ef.js"><link rel="prefetch" href="/assets/js/117.0b6a493b.js"><link rel="prefetch" href="/assets/js/118.237adc24.js"><link rel="prefetch" href="/assets/js/119.e9d1d737.js"><link rel="prefetch" href="/assets/js/12.818babcb.js"><link rel="prefetch" href="/assets/js/120.d72033cd.js"><link rel="prefetch" href="/assets/js/121.ee195c9f.js"><link rel="prefetch" href="/assets/js/122.49c233c1.js"><link rel="prefetch" href="/assets/js/123.f818c0be.js"><link rel="prefetch" href="/assets/js/124.f34ec6ae.js"><link rel="prefetch" href="/assets/js/125.1d1567e0.js"><link rel="prefetch" href="/assets/js/126.9565eb40.js"><link rel="prefetch" href="/assets/js/127.0da4c68c.js"><link rel="prefetch" href="/assets/js/128.852c8672.js"><link rel="prefetch" href="/assets/js/129.cf315d99.js"><link rel="prefetch" href="/assets/js/13.b6bc2652.js"><link rel="prefetch" href="/assets/js/130.814aa68b.js"><link rel="prefetch" href="/assets/js/131.c68d8ed6.js"><link rel="prefetch" href="/assets/js/132.14828589.js"><link rel="prefetch" href="/assets/js/133.e28b0e25.js"><link rel="prefetch" href="/assets/js/134.5c8b8625.js"><link rel="prefetch" href="/assets/js/135.137dbcb5.js"><link rel="prefetch" href="/assets/js/136.488c258a.js"><link rel="prefetch" href="/assets/js/137.bb3470b4.js"><link rel="prefetch" href="/assets/js/138.963e7285.js"><link rel="prefetch" href="/assets/js/139.5e04a80f.js"><link rel="prefetch" href="/assets/js/14.7344d085.js"><link rel="prefetch" href="/assets/js/140.355355c5.js"><link rel="prefetch" href="/assets/js/141.2b8c1f2c.js"><link rel="prefetch" href="/assets/js/142.c3bcb983.js"><link rel="prefetch" href="/assets/js/143.53ad9675.js"><link rel="prefetch" href="/assets/js/144.a6df48af.js"><link rel="prefetch" href="/assets/js/145.078fa1b8.js"><link rel="prefetch" href="/assets/js/146.9ddfc19e.js"><link rel="prefetch" href="/assets/js/147.9cd639e4.js"><link rel="prefetch" href="/assets/js/148.444a496a.js"><link rel="prefetch" href="/assets/js/149.1f834148.js"><link rel="prefetch" href="/assets/js/15.8b4f0a19.js"><link rel="prefetch" href="/assets/js/150.f0399c93.js"><link rel="prefetch" href="/assets/js/151.770b2ed6.js"><link rel="prefetch" href="/assets/js/152.4f0aacee.js"><link rel="prefetch" href="/assets/js/153.f8df82c6.js"><link rel="prefetch" href="/assets/js/154.eac81cc6.js"><link rel="prefetch" href="/assets/js/155.92743a96.js"><link rel="prefetch" href="/assets/js/156.2880b244.js"><link rel="prefetch" href="/assets/js/157.cc4a0c11.js"><link rel="prefetch" href="/assets/js/158.8bf44fb5.js"><link rel="prefetch" href="/assets/js/159.986f5a88.js"><link rel="prefetch" href="/assets/js/16.80575a0b.js"><link rel="prefetch" href="/assets/js/160.76913b1d.js"><link rel="prefetch" href="/assets/js/161.da8930be.js"><link rel="prefetch" href="/assets/js/162.445f1609.js"><link rel="prefetch" href="/assets/js/163.577a9227.js"><link rel="prefetch" href="/assets/js/164.b088fdb5.js"><link rel="prefetch" href="/assets/js/165.d58831ce.js"><link rel="prefetch" href="/assets/js/166.8658be3e.js"><link rel="prefetch" href="/assets/js/167.71cccdd6.js"><link rel="prefetch" href="/assets/js/168.c1ea18da.js"><link rel="prefetch" href="/assets/js/169.be170a86.js"><link rel="prefetch" href="/assets/js/17.a13eca2b.js"><link rel="prefetch" href="/assets/js/170.08aaca48.js"><link rel="prefetch" href="/assets/js/171.9c8c6ddc.js"><link rel="prefetch" href="/assets/js/172.fcb6bfd7.js"><link rel="prefetch" href="/assets/js/173.f739c68c.js"><link rel="prefetch" href="/assets/js/174.78720caf.js"><link rel="prefetch" href="/assets/js/175.2569130a.js"><link rel="prefetch" href="/assets/js/176.7e223dbb.js"><link rel="prefetch" href="/assets/js/177.0cecf756.js"><link rel="prefetch" href="/assets/js/178.f8103207.js"><link rel="prefetch" href="/assets/js/179.2245c549.js"><link rel="prefetch" href="/assets/js/18.c5e61a24.js"><link rel="prefetch" href="/assets/js/180.6e0bc22d.js"><link rel="prefetch" href="/assets/js/181.fed77bd0.js"><link rel="prefetch" href="/assets/js/182.812d2b3d.js"><link rel="prefetch" href="/assets/js/183.ef134cb2.js"><link rel="prefetch" href="/assets/js/184.a4312abd.js"><link rel="prefetch" href="/assets/js/185.52a4295a.js"><link rel="prefetch" href="/assets/js/186.10e813fe.js"><link rel="prefetch" href="/assets/js/187.ec71269e.js"><link rel="prefetch" href="/assets/js/188.62fa3814.js"><link rel="prefetch" href="/assets/js/189.013df69e.js"><link rel="prefetch" href="/assets/js/19.de97d44f.js"><link rel="prefetch" href="/assets/js/190.3fa67a4f.js"><link rel="prefetch" href="/assets/js/191.820f4cd0.js"><link rel="prefetch" href="/assets/js/192.878effaa.js"><link rel="prefetch" href="/assets/js/193.70198a9c.js"><link rel="prefetch" href="/assets/js/194.43ac300f.js"><link rel="prefetch" href="/assets/js/195.0b3de38c.js"><link rel="prefetch" href="/assets/js/196.f37c5f6a.js"><link rel="prefetch" href="/assets/js/197.a70d9271.js"><link rel="prefetch" href="/assets/js/198.a7767623.js"><link rel="prefetch" href="/assets/js/199.49056ec7.js"><link rel="prefetch" href="/assets/js/20.4c9cd3ac.js"><link rel="prefetch" href="/assets/js/200.f79ccb8d.js"><link rel="prefetch" href="/assets/js/201.bd52a247.js"><link rel="prefetch" href="/assets/js/202.77ba6fcc.js"><link rel="prefetch" href="/assets/js/203.3fd38c4a.js"><link rel="prefetch" href="/assets/js/204.493f4aad.js"><link rel="prefetch" href="/assets/js/205.e353e389.js"><link rel="prefetch" href="/assets/js/206.8b8fdbba.js"><link rel="prefetch" href="/assets/js/207.8a96800f.js"><link rel="prefetch" href="/assets/js/208.60a5c2ac.js"><link rel="prefetch" href="/assets/js/209.180dbdee.js"><link rel="prefetch" href="/assets/js/21.0599e6d2.js"><link rel="prefetch" href="/assets/js/210.1dc54834.js"><link rel="prefetch" href="/assets/js/211.d8d9b63d.js"><link rel="prefetch" href="/assets/js/212.1b3fd4a9.js"><link rel="prefetch" href="/assets/js/213.5304adcf.js"><link rel="prefetch" href="/assets/js/214.8f743ba3.js"><link rel="prefetch" href="/assets/js/215.03cc8b66.js"><link rel="prefetch" href="/assets/js/216.ef93b5c4.js"><link rel="prefetch" href="/assets/js/217.0f0bcdae.js"><link rel="prefetch" href="/assets/js/218.24d07b1c.js"><link rel="prefetch" href="/assets/js/219.be460c95.js"><link rel="prefetch" href="/assets/js/22.bf9a1a15.js"><link rel="prefetch" href="/assets/js/220.b74851a0.js"><link rel="prefetch" href="/assets/js/221.9b72aff4.js"><link rel="prefetch" href="/assets/js/222.167895e6.js"><link rel="prefetch" href="/assets/js/223.1cfb108e.js"><link rel="prefetch" href="/assets/js/224.5cc2e228.js"><link rel="prefetch" href="/assets/js/225.6408f8ee.js"><link rel="prefetch" href="/assets/js/226.ffe542c4.js"><link rel="prefetch" href="/assets/js/23.1c869369.js"><link rel="prefetch" href="/assets/js/24.e4024dd4.js"><link rel="prefetch" href="/assets/js/25.e92af0dd.js"><link rel="prefetch" href="/assets/js/26.fbf4967a.js"><link rel="prefetch" href="/assets/js/27.00f4c2bc.js"><link rel="prefetch" href="/assets/js/28.eb06bd91.js"><link rel="prefetch" href="/assets/js/29.3215cbfd.js"><link rel="prefetch" href="/assets/js/3.5aeea859.js"><link rel="prefetch" href="/assets/js/30.4d19b4c0.js"><link rel="prefetch" href="/assets/js/31.60886406.js"><link rel="prefetch" href="/assets/js/32.20886f19.js"><link rel="prefetch" href="/assets/js/33.7a9f6c0a.js"><link rel="prefetch" href="/assets/js/34.07b97846.js"><link rel="prefetch" href="/assets/js/35.d51ade57.js"><link rel="prefetch" href="/assets/js/36.aaa51e62.js"><link rel="prefetch" href="/assets/js/37.83e368c6.js"><link rel="prefetch" href="/assets/js/38.460cc21f.js"><link rel="prefetch" href="/assets/js/39.3d60dbdd.js"><link rel="prefetch" href="/assets/js/4.a63a4070.js"><link rel="prefetch" href="/assets/js/40.74a3069e.js"><link rel="prefetch" href="/assets/js/41.7c72eb0e.js"><link rel="prefetch" href="/assets/js/42.e52eafad.js"><link rel="prefetch" href="/assets/js/43.c2460c21.js"><link rel="prefetch" href="/assets/js/44.49b69202.js"><link rel="prefetch" href="/assets/js/45.ca830dd3.js"><link rel="prefetch" href="/assets/js/46.feff336b.js"><link rel="prefetch" href="/assets/js/47.1c0896a8.js"><link rel="prefetch" href="/assets/js/48.2317a641.js"><link rel="prefetch" href="/assets/js/49.826945bc.js"><link rel="prefetch" href="/assets/js/5.65ca3e83.js"><link rel="prefetch" href="/assets/js/50.4b48afd2.js"><link rel="prefetch" href="/assets/js/51.88824fd2.js"><link rel="prefetch" href="/assets/js/52.695ed89b.js"><link rel="prefetch" href="/assets/js/53.1453e41a.js"><link rel="prefetch" href="/assets/js/54.f138c0e9.js"><link rel="prefetch" href="/assets/js/55.ff80933e.js"><link rel="prefetch" href="/assets/js/56.b5845a07.js"><link rel="prefetch" href="/assets/js/57.5fa3b21f.js"><link rel="prefetch" href="/assets/js/58.1367f3b4.js"><link rel="prefetch" href="/assets/js/59.e423c723.js"><link rel="prefetch" href="/assets/js/6.c5bb8f3e.js"><link rel="prefetch" href="/assets/js/60.96621a38.js"><link rel="prefetch" href="/assets/js/61.7b48947d.js"><link rel="prefetch" href="/assets/js/62.000c3176.js"><link rel="prefetch" href="/assets/js/63.2b52a9f7.js"><link rel="prefetch" href="/assets/js/64.398296e9.js"><link rel="prefetch" href="/assets/js/65.90fdb846.js"><link rel="prefetch" href="/assets/js/66.ef09e78d.js"><link rel="prefetch" href="/assets/js/67.b23ebf2a.js"><link rel="prefetch" href="/assets/js/68.f2432117.js"><link rel="prefetch" href="/assets/js/69.719e9c1c.js"><link rel="prefetch" href="/assets/js/7.8869e8ec.js"><link rel="prefetch" href="/assets/js/70.9c045b12.js"><link rel="prefetch" href="/assets/js/71.fd154bf9.js"><link rel="prefetch" href="/assets/js/72.392adc49.js"><link rel="prefetch" href="/assets/js/73.bf97d210.js"><link rel="prefetch" href="/assets/js/74.e0ca5bd5.js"><link rel="prefetch" href="/assets/js/75.baf97fc9.js"><link rel="prefetch" href="/assets/js/76.d22cf157.js"><link rel="prefetch" href="/assets/js/77.140a42db.js"><link rel="prefetch" href="/assets/js/78.2cae7a40.js"><link rel="prefetch" href="/assets/js/79.31ace155.js"><link rel="prefetch" href="/assets/js/8.77202eac.js"><link rel="prefetch" href="/assets/js/80.0bcc2452.js"><link rel="prefetch" href="/assets/js/81.f24c2150.js"><link rel="prefetch" href="/assets/js/82.f1676137.js"><link rel="prefetch" href="/assets/js/83.63c5fef8.js"><link rel="prefetch" href="/assets/js/84.8f099aad.js"><link rel="prefetch" href="/assets/js/85.0ff1685a.js"><link rel="prefetch" href="/assets/js/86.8670b4d2.js"><link rel="prefetch" href="/assets/js/87.d7f0e264.js"><link rel="prefetch" href="/assets/js/88.ae445553.js"><link rel="prefetch" href="/assets/js/89.a36446fd.js"><link rel="prefetch" href="/assets/js/9.1ccb07cf.js"><link rel="prefetch" href="/assets/js/90.88609a64.js"><link rel="prefetch" href="/assets/js/91.41480a41.js"><link rel="prefetch" href="/assets/js/92.4007406c.js"><link rel="prefetch" href="/assets/js/93.299c852a.js"><link rel="prefetch" href="/assets/js/94.cd869297.js"><link rel="prefetch" href="/assets/js/95.b55aa66d.js"><link rel="prefetch" href="/assets/js/96.82f921e1.js"><link rel="prefetch" href="/assets/js/97.46c181a7.js"><link rel="prefetch" href="/assets/js/98.a65d6414.js"><link rel="prefetch" href="/assets/js/99.8ab1355c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7385e7f5.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">RollStones·笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/java/" class="nav-link">
+  Java
+</a></div><div class="nav-item"><a href="/webkai-fa/" class="nav-link router-link-active">
+  Web开发
+</a></div><div class="nav-item"><a href="/linux/" class="nav-link">
+  Linux
+</a></div><div class="nav-item"><a href="/js/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><a href="/mian-shi-ti/" class="nav-link">
+  面试题
+</a></div><div class="nav-item"><a href="/javaxing-neng-diao-you-gai-shu/" class="nav-link">
+  Java性能调优概述
+</a></div><div class="nav-item"><a href="/javaxing-neng-diao-you-a-li-/" class="nav-link">
+  Java性能调优 阿里
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/java/" class="nav-link">
+  Java
+</a></div><div class="nav-item"><a href="/webkai-fa/" class="nav-link router-link-active">
+  Web开发
+</a></div><div class="nav-item"><a href="/linux/" class="nav-link">
+  Linux
+</a></div><div class="nav-item"><a href="/js/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><a href="/mian-shi-ti/" class="nav-link">
+  面试题
+</a></div><div class="nav-item"><a href="/javaxing-neng-diao-you-gai-shu/" class="nav-link">
+  Java性能调优概述
+</a></div><div class="nav-item"><a href="/javaxing-neng-diao-you-a-li-/" class="nav-link">
+  Java性能调优 阿里
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Spring</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Spring Boot</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>Spring Start</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>实用配置</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/shi-yong-pei-zhi.html" class="sidebar-link">01-实用配置</a></li><li><a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/springboot-chang-yong-pei-zhi.html" class="sidebar-link">02-SpringBoot 常用配置</a></li><li><a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/springboot-pei-zhi-quan-ji.html" aria-current="page" class="active sidebar-link">03-SpringBoot 配置全集</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/springboot-pei-zhi-quan-ji.html#application-配置" class="sidebar-link">application 配置</a></li><li class="sidebar-sub-header"><a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/springboot-pei-zhi-quan-ji.html#aop-配置" class="sidebar-link">aop 配置</a></li><li class="sidebar-sub-header"><a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/springboot-pei-zhi-quan-ji.html#autoconfig-配置" class="sidebar-link">autoconfig 配置</a></li><li class="sidebar-sub-header"><a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/springboot-pei-zhi-quan-ji.html#tomcat-配置" class="sidebar-link">tomcat 配置</a></li><li class="sidebar-sub-header"><a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/springboot-pei-zhi-quan-ji.html#undertow-配置" class="sidebar-link">undertow 配置</a></li><li class="sidebar-sub-header"><a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/springboot-pei-zhi-quan-ji.html#server-通用配置" class="sidebar-link">server 通用配置</a></li><li class="sidebar-sub-header"><a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/springboot-pei-zhi-quan-ji.html#cookie、session配置" class="sidebar-link">cookie、session配置</a></li><li class="sidebar-sub-header"><a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/springboot-pei-zhi-quan-ji.html#ssl配置" class="sidebar-link">ssl配置</a></li><li class="sidebar-sub-header"><a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/springboot-pei-zhi-quan-ji.html#messages-配置" class="sidebar-link">messages 配置</a></li><li class="sidebar-sub-header"><a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/springboot-pei-zhi-quan-ji.html#resource-配置" class="sidebar-link">resource 配置</a></li><li class="sidebar-sub-header"><a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/springboot-pei-zhi-quan-ji.html#multipart-文件上传配置" class="sidebar-link">multipart 文件上传配置</a></li><li class="sidebar-sub-header"><a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/springboot-pei-zhi-quan-ji.html#http-配置" class="sidebar-link">http 配置</a></li><li class="sidebar-sub-header"><a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/springboot-pei-zhi-quan-ji.html#json-配置" class="sidebar-link">json 配置</a></li><li class="sidebar-sub-header"><a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/springboot-pei-zhi-quan-ji.html#数据源基础配置" class="sidebar-link">数据源基础配置</a></li><li class="sidebar-sub-header"><a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/springboot-pei-zhi-quan-ji.html#jpa-配置" class="sidebar-link">JPA 配置</a></li><li class="sidebar-sub-header"><a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/springboot-pei-zhi-quan-ji.html#h2-设置" class="sidebar-link">h2 设置</a></li><li class="sidebar-sub-header"><a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/springboot-pei-zhi-quan-ji.html#缓存通用配置" class="sidebar-link">缓存通用配置</a></li><li class="sidebar-sub-header"><a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/springboot-pei-zhi-quan-ji.html#redis-配置" class="sidebar-link">redis 配置</a></li><li class="sidebar-sub-header"><a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/springboot-pei-zhi-quan-ji.html#elasticsearch-配置" class="sidebar-link">elasticsearch 配置</a></li><li class="sidebar-sub-header"><a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/springboot-pei-zhi-quan-ji.html#mongodb-配置" class="sidebar-link">mongodb 配置</a></li><li class="sidebar-sub-header"><a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/springboot-pei-zhi-quan-ji.html#restful配置" class="sidebar-link">RESTful配置</a></li><li class="sidebar-sub-header"><a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/springboot-pei-zhi-quan-ji.html#solr配置" class="sidebar-link">solr配置</a></li><li class="sidebar-sub-header"><a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/springboot-pei-zhi-quan-ji.html#activemq-配置" class="sidebar-link">activemq 配置</a></li><li class="sidebar-sub-header"><a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/springboot-pei-zhi-quan-ji.html#rabbitmq-配置" class="sidebar-link">rabbitmq 配置</a></li><li class="sidebar-sub-header"><a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/springboot-pei-zhi-quan-ji.html#jms-配置" class="sidebar-link">jms 配置</a></li></ul></li></ul></section></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Spring Cloud</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>其他框架</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>中间件</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>开发工具</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_03-springboot-配置全集"><a href="#_03-springboot-配置全集" class="header-anchor">#</a> 03-SpringBoot 配置全集</h1> <h2 id="application-配置"><a href="#application-配置" class="header-anchor">#</a> application 配置</h2> <ul><li>spring.application.admin.enabled
+是否启用admin特性，默认为: false</li> <li>spring.application.admin.jmx-name
+指定admin MBean的名称，默认为: org.springframework.boot:type=Admin,name=SpringApplication</li></ul> <h2 id="aop-配置"><a href="#aop-配置" class="header-anchor">#</a> aop 配置</h2> <ul><li>spring.aop.auto
+是否支持@EnableAspectJAutoProxy，默认为: true</li> <li>spring.aop.proxy-target-class
+true为使用CGLIB代理，false为JDK代理，默认为false</li></ul> <h2 id="autoconfig-配置"><a href="#autoconfig-配置" class="header-anchor">#</a> autoconfig 配置</h2> <ul><li>spring.autoconfigure.exclude
+配置要排除的Auto-configuration classes.</li> <li>jmx 配置
+spring.jmx.default-domain
+指定JMX domain name.</li> <li>spring.jmx.enabled
+是否暴露jmx，默认为true</li> <li>spring.jmx.server
+指定MBeanServer bean name. 默认为: mbeanServer)</li></ul> <h1 id="内嵌服务器配置"><a href="#内嵌服务器配置" class="header-anchor">#</a> 内嵌服务器配置</h1> <h2 id="tomcat-配置"><a href="#tomcat-配置" class="header-anchor">#</a> tomcat 配置</h2> <ul><li>server.tomcat.basedir
+设定Tomcat的base 目录，如果没有指定则使用临时目录.</li> <li>server.tomcat.access-log-enabled
+是否开启access log ，默认: false)</li> <li>server.tomcat.access-log-pattern
+设定access logs的格式，默认: common</li> <li>server.tomcat.accesslog.directory
+设定log的目录，默认: logs</li> <li>server.tomcat.accesslog.enabled
+是否开启access log，默认: false</li> <li>server.tomcat.accesslog.pattern
+设定access logs的格式，默认: common</li> <li>server.tomcat.accesslog.prefix
+设定Log 文件的前缀，默认: access_log</li> <li>server.tomcat.accesslog.suffix
+设定Log 文件的后缀，默认: .log</li> <li>server.tomcat.background-processor-delay
+后台线程方法的Delay大小: 30</li> <li>server.tomcat.internal-proxies
+设定信任的正则表达式，默认:“10.\d{1,3}.\d{1,3}.\d{1,3}| 192.168.\d{1,3}.\d{1,3}| 169.254.\d{1,3}.\d{1,3}| 127.\d{1,3}.\d{1,3}.\d{1,3}| 172.1[6-9]{1}.\d{1,3}.\d{1,3}| 172.2[0-9]{1}.\d{1,3}.\d{1,3}|172.3[0-1]{1}.\d{1,3}.\d{1,3}”</li> <li>server.tomcat.max-http-header-size
+设定http header的最小值，默认: 0</li> <li>server.tomcat.max-threads
+设定tomcat的最大工作线程数，默认为: 0</li> <li>server.tomcat.port-header
+设定http header使用的，用来覆盖原来port的value.</li> <li>server.tomcat.protocol-header
+设定Header包含的协议，通常是 X-Forwarded-Proto，如果remoteIpHeader有值，则将设置为RemoteIpValve.</li> <li>server.tomcat.protocol-header-https-value
+设定使用SSL的header的值，默认https.</li> <li>server.tomcat.remote-ip-header
+设定remote IP的header，如果remoteIpHeader有值，则设置为RemoteIpValve</li> <li>server.tomcat.uri-encoding
+设定URI的解码字符集.</li></ul> <h2 id="undertow-配置"><a href="#undertow-配置" class="header-anchor">#</a> undertow 配置</h2> <ul><li>server.undertow.access-log-dir
+设定Undertow access log 的目录，默认: logs</li> <li>server.undertow.access-log-enabled
+是否开启access log，默认: false</li> <li>server.undertow.access-log-pattern
+设定access logs的格式，默认: common</li> <li>server.undertow.accesslog.dir
+设定access log 的目录.</li> <li>server.undertow.buffer-size
+设定buffer的大小.</li> <li>server.undertow.buffers-per-region
+设定每个region的buffer数</li> <li>server.undertow.direct-buffers
+设定堆外内存</li> <li>server.undertow.io-threads
+设定I/O线程数.</li> <li>server.undertow.worker-threads
+设定工作线程数</li></ul> <h2 id="server-通用配置"><a href="#server-通用配置" class="header-anchor">#</a> server 通用配置</h2> <ul><li>server.port
+设定http监听端口。<strong>此配置项最为常见</strong>。</li> <li>server.servlet-path
+设定dispatcher servlet的监听路径，默认为: /</li> <li>server.address
+指定server绑定的地址</li> <li>server.compression.enabled
+是否开启压缩，默认为false.</li> <li>server.compression.excluded-user-agents
+指定不压缩的user-agent，多个以逗号分隔，默认值为:text/html,text/xml,text/plain,text/css</li> <li>server.compression.mime-types
+指定要压缩的MIME type，多个以逗号分隔.</li> <li>server.compression.min-response-size
+执行压缩的阈值，默认为2048</li> <li>server.context-parameters.[param name]
+设置servlet context 参数</li> <li>server.context-path
+设定应用的context-path.</li> <li>server.display-name
+设定应用的展示名称，默认: application</li> <li>server.jsp-servlet.class-name
+设定编译JSP用的servlet，默认: org.apache.jasper.servlet.JspServlet)</li> <li>server.jsp-servlet.init-parameters.[param name]
+设置JSP servlet 初始化参数.</li> <li>server.jsp-servlet.registered
+设定JSP servlet是否注册到内嵌的servlet容器，默认true</li></ul> <h2 id="cookie、session配置"><a href="#cookie、session配置" class="header-anchor">#</a> cookie、session配置</h2> <ul><li>server.session.cookie.comment
+指定session cookie的comment</li> <li>server.session.cookie.domain
+指定session cookie的domain</li> <li>server.session.cookie.http-only
+是否开启HttpOnly.</li> <li>server.session.cookie.max-age
+设定session cookie的最大age.</li> <li>server.session.cookie.name
+设定Session cookie 的名称.</li> <li>server.session.cookie.path
+设定session cookie的路径.</li> <li>server.session.cookie.secure
+设定session cookie的“Secure” flag.</li> <li>server.session.persistent
+重启时是否持久化session，默认false</li> <li>server.session.timeout
+session的超时时间</li> <li>server.session.tracking-modes
+设定Session的追踪模式(cookie, url, ssl).</li></ul> <h2 id="ssl配置"><a href="#ssl配置" class="header-anchor">#</a> ssl配置</h2> <ul><li>server.ssl.ciphers
+是否支持SSL ciphers.</li> <li>server.ssl.client-auth
+设定client authentication是wanted 还是 needed.</li> <li>server.ssl.enabled
+是否开启ssl，默认: true</li> <li>server.ssl.key-alias
+设定key store中key的别名.</li> <li>server.ssl.key-password
+访问key store中key的密码.</li> <li>server.ssl.key-store
+设定持有SSL certificate的key store的路径，通常是一个.jks文件.</li> <li>server.ssl.key-store-password
+设定访问key store的密码.</li> <li>server.ssl.key-store-provider
+设定key store的提供者.</li> <li>server.ssl.key-store-type
+设定key store的类型.</li> <li>server.ssl.protocol
+使用的SSL协议，默认: TLS</li> <li>server.ssl.trust-store
+持有SSL certificates的Trust store.</li> <li>server.ssl.trust-store-password
+访问trust store的密码.</li> <li>server.ssl.trust-store-provider
+设定trust store的提供者.</li> <li>server.ssl.trust-store-type
+指定trust store的类型.</li></ul> <h1 id="spring-mvc-配置"><a href="#spring-mvc-配置" class="header-anchor">#</a> spring mvc 配置</h1> <p>MVC基础配置</p> <ul><li>spring.mvc.async.request-timeout
+设定async请求的超时时间，以毫秒为单位，如果没有设置的话，以具体实现的超时时间为准，比如tomcat的servlet3的话是10秒.</li> <li>spring.mvc.date-format
+设定日期的格式，比如dd/MM/yyyy.</li> <li>spring.mvc.favicon.enabled
+是否支持favicon.ico，默认为: true</li> <li>spring.mvc.ignore-default-model-on-redirect
+在重定向时是否忽略默认model的内容，默认为true</li> <li>spring.mvc.locale
+指定使用的Locale.</li> <li>spring.mvc.message-codes-resolver-format
+指定message codes的格式化策略(PREFIX_ERROR_CODE,POSTFIX_ERROR_CODE).</li> <li>spring.mvc.view.prefix
+指定mvc视图的前缀.</li> <li>spring.mvc.view.suffix
+指定mvc视图的后缀.</li></ul> <h2 id="messages-配置"><a href="#messages-配置" class="header-anchor">#</a> messages 配置</h2> <ul><li>spring.messages.basename
+指定message的basename，多个以逗号分隔，如果不加包名的话，默认从classpath路径开始，默认: messages</li> <li>spring.messages.cache-seconds
+设定加载的资源文件缓存失效时间，-1的话为永不过期，默认为-1</li> <li>spring.messages.encoding
+设定Message bundles的编码，默认: UTF-8</li></ul> <h2 id="resource-配置"><a href="#resource-配置" class="header-anchor">#</a> resource 配置</h2> <ul><li>spring.resources.add-mappings
+是否开启默认的资源处理，默认为true</li> <li>spring.resources.cache-period
+设定资源的缓存时效，以秒为单位.</li> <li>spring.resources.chain.cache
+是否开启缓存，默认为: true</li> <li>spring.resources.chain.enabled
+是否开启资源 handling chain，默认为false</li> <li>spring.resources.chain.html-application-cache
+是否开启h5应用的cache manifest重写，默认为: false</li> <li>spring.resources.chain.strategy.content.enabled
+是否开启内容版本策略，默认为false</li> <li>spring.resources.chain.strategy.content.paths
+指定要应用的版本的路径，多个以逗号分隔，默认为:[/**]</li> <li>spring.resources.chain.strategy.fixed.enabled
+是否开启固定的版本策略，默认为false</li> <li>spring.resources.chain.strategy.fixed.paths
+指定要应用版本策略的路径，多个以逗号分隔</li> <li>spring.resources.chain.strategy.fixed.version
+指定版本策略使用的版本号</li> <li>spring.resources.static-locations
+指定静态资源路径，默认为classpath:[/META-INF/resources/,/resources/, /static/, /public/]以及context:/</li></ul> <h2 id="multipart-文件上传配置"><a href="#multipart-文件上传配置" class="header-anchor">#</a> multipart 文件上传配置</h2> <ul><li>multipart.enabled
+是否开启文件上传支持，默认为true</li> <li>multipart.file-size-threshold
+设定文件写入磁盘的阈值，单位为MB或KB，默认为0</li> <li>multipart.location
+指定文件上传路径.</li> <li>multipart.max-file-size
+指定文件大小最大值，默认1MB</li> <li>multipart.max-request-size
+指定每次请求的最大值，默认为10MB</li></ul> <h2 id="http-配置"><a href="#http-配置" class="header-anchor">#</a> http 配置</h2> <ul><li>spring.hateoas.apply-to-primary-object-mapper
+设定是否对object mapper也支持HATEOAS，默认为: true</li> <li>spring.http.converters.preferred-json-mapper
+是否优先使用JSON mapper来转换.</li> <li>spring.http.encoding.charset
+指定http请求和相应的Charset，默认: UTF-8</li> <li>spring.http.encoding.enabled
+是否开启http的编码支持，默认为true</li> <li>spring.http.encoding.force
+是否强制对http请求和响应进行编码，默认为true</li></ul> <h2 id="json-配置"><a href="#json-配置" class="header-anchor">#</a> json 配置</h2> <ul><li>spring.jackson.date-format
+指定日期格式，比如yyyy-MM-dd HH:mm:ss，或者具体的格式化类的全限定名</li> <li>spring.jackson.deserialization
+是否开启Jackson的反序列化</li> <li>spring.jackson.generator
+是否开启json的generators.</li> <li>spring.jackson.joda-date-time-format
+指定Joda date/time的格式，比如yyyy-MM-dd HH:mm:ss). 如果没有配置的话，dateformat会作为backup</li> <li>spring.jackson.locale
+指定json使用的Locale.</li> <li>spring.jackson.mapper
+是否开启Jackson通用的特性.</li> <li>spring.jackson.parser
+是否开启jackson的parser特性.</li> <li>spring.jackson.property-naming-strategy
+指定PropertyNamingStrategy (CAMEL_CASE_TO_LOWER_CASE_WITH_UNDERSCORES)或者指定PropertyNamingStrategy子类的全限定类名.</li> <li>spring.jackson.serialization
+是否开启jackson的序列化.</li> <li>spring.jackson.serialization-inclusion
+指定序列化时属性的inclusion方式，具体查看JsonInclude.Include枚举.</li> <li>spring.jackson.time-zone
+指定日期格式化时区，比如America/Los_Angeles或者GMT+10.</li></ul> <h1 id="datasource-数据源配置"><a href="#datasource-数据源配置" class="header-anchor">#</a> datasource 数据源配置</h1> <h2 id="数据源基础配置"><a href="#数据源基础配置" class="header-anchor">#</a> 数据源基础配置</h2> <ul><li>spring.dao.exceptiontranslation.enabled
+是否开启PersistenceExceptionTranslationPostProcessor，默认为true</li> <li>spring.datasource.abandon-when-percentage-full
+设定超时被废弃的连接占到多少比例时要被关闭或上报</li> <li>spring.datasource.allow-pool-suspension
+使用Hikari pool时，是否允许连接池暂停，默认为: false</li> <li>spring.datasource.alternate-username-allowed
+是否允许替代的用户名.</li> <li>spring.datasource.auto-commit
+指定updates是否自动提交.</li> <li>spring.datasource.catalog
+指定默认的catalog.</li> <li>spring.datasource.commit-on-return
+设置当连接被归还时，是否要提交所有还未完成的事务</li> <li>spring.datasource.connection-init-sql
+指定连接被创建，再被添加到连接池之前执行的sql.</li> <li>spring.datasource.connection-init-sqls
+使用DBCP connection pool时，指定初始化时要执行的sql</li> <li>spring.datasource.connection-properties.[key]
+在使用DBCP connection pool时指定要配置的属性</li> <li>spring.datasource.connection-test-query
+指定校验连接合法性执行的sql语句</li> <li>spring.datasource.connection-timeout
+指定连接的超时时间，毫秒单位.</li> <li>spring.datasource.continue-on-error
+在初始化数据库时，遇到错误是否继续，默认false</li> <li>spring.datasource.data
+指定Data (DML)脚本</li> <li>spring.datasource.data-source-class-name
+指定数据源的全限定名.</li> <li>spring.datasource.data-source-jndi
+指定jndi的地址</li> <li>spring.datasource.data-source-properties.[key]
+使用Hikari connection pool时，指定要设置的属性</li> <li>spring.datasource.db-properties
+使用Tomcat connection pool，指定要设置的属性</li> <li>spring.datasource.default-auto-commit
+是否自动提交.</li> <li>spring.datasource.default-catalog
+指定连接默认的catalog.</li> <li>spring.datasource.default-read-only
+是否设置默认连接只读.</li> <li>spring.datasource.default-transaction-isolation
+<strong>指定连接的事务的默认隔离级别</strong>.</li> <li>spring.datasource.driver-class-name
+指定driver的类名，默认从jdbc url中自动探测.</li> <li>spring.datasource.fair-queue
+是否采用FIFO返回连接.</li> <li>spring.datasource.health-check-properties.[key]
+使用Hikari connection pool时，在心跳检查时传递的属性</li> <li>spring.datasource.idle-timeout
+指定连接多久没被使用时，被设置为空闲，默认为10ms</li> <li>spring.datasource.ignore-exception-on-pre-load
+当初始化连接池时，是否忽略异常.</li> <li>spring.datasource.init-sql
+当连接创建时，执行的sql</li> <li>spring.datasource.initial-size
+指定启动连接池时，初始建立的连接数量</li> <li>spring.datasource.initialization-fail-fast
+当创建连接池时，没法创建指定最小连接数量是否抛异常</li> <li>spring.datasource.initialize
+指定初始化数据源，是否用data.sql来初始化，默认: true</li> <li>spring.datasource.isolate-internal-queries
+指定内部查询是否要被隔离，默认为false</li> <li>spring.datasource.jdbc-interceptors
+使用Tomcat connection pool时，指定jdbc拦截器，分号分隔</li> <li>spring.datasource.jdbc-url
+指定JDBC URL.</li> <li>spring.datasource.jmx-enabled
+是否开启JMX，默认为: false</li> <li>spring.datasource.jndi-name
+指定jndi的名称.</li> <li>spring.datasource.leak-detection-threshold
+使用Hikari connection pool时，多少毫秒检测一次连接泄露.</li> <li>spring.datasource.log-abandoned
+使用DBCP connection pool，是否追踪废弃statement或连接，默认为: false</li> <li>spring.datasource.log-validation-errors
+当使用Tomcat connection pool是否打印校验错误.</li> <li>spring.datasource.login-timeout
+指定连接数据库的超时时间.</li> <li>spring.datasource.max-active
+指定连接池中最大的活跃连接数.</li> <li>spring.datasource.max-age
+指定连接池中连接的最大年龄</li> <li>spring.datasource.max-idle
+指定连接池最大的空闲连接数量.</li> <li>spring.datasource.max-lifetime
+指定连接池中连接的最大生存时间，毫秒单位.</li> <li>spring.datasource.max-open-prepared-statements
+指定最大的打开的prepared statements数量.</li> <li>spring.datasource.max-wait
+指定连接池等待连接返回的最大等待时间，毫秒单位.</li> <li>spring.datasource.maximum-pool-size
+指定连接池最大的连接数，包括使用中的和空闲的连接.</li> <li>spring.datasource.min-evictable-idle-time-millis
+指定一个空闲连接最少空闲多久后可被清除.</li> <li>spring.datasource.min-idle
+指定必须保持连接的最小值(For DBCP and Tomcat connection pools)</li> <li>spring.datasource.minimum-idle
+指定连接维护的最小空闲连接数，当使用HikariCP时指定.</li> <li>spring.datasource.name
+指定数据源名.</li> <li>spring.datasource.num-tests-per-eviction-run
+指定运行每个idle object evictor线程时的对象数量</li> <li>spring.datasource.password
+指定数据库密码.</li> <li>spring.datasource.platform
+指定schema要使用的Platform(schema-${platform}.sql)，默认为: all</li> <li>spring.datasource.pool-name
+指定连接池名字.</li> <li>spring.datasource.pool-prepared-statements
+指定是否池化statements.</li> <li>spring.datasource.propagate-interrupt-state
+在等待连接时，如果线程被中断，是否传播中断状态.</li> <li>spring.datasource.read-only
+当使用Hikari connection pool时，是否标记数据源只读</li> <li>spring.datasource.register-mbeans
+指定Hikari connection pool是否注册JMX MBeans.</li> <li>spring.datasource.remove-abandoned
+指定当连接超过废弃超时时间时，是否立刻删除该连接.</li> <li>spring.datasource.remove-abandoned-timeout
+指定连接应该被废弃的时间.</li> <li>spring.datasource.rollback-on-return
+在归还连接时，是否回滚等待中的事务.</li> <li>spring.datasource.schema
+指定Schema (DDL)脚本.</li> <li>spring.datasource.separator
+指定初始化脚本的语句分隔符，默认: ;</li> <li>spring.datasource.sql-script-encoding
+指定SQL scripts编码.</li> <li>spring.datasource.suspect-timeout
+指定打印废弃连接前的超时时间.</li> <li>spring.datasource.test-on-borrow
+当从连接池借用连接时，是否测试该连接.</li> <li>spring.datasource.test-on-connect
+创建时，是否测试连接</li> <li>spring.datasource.test-on-return
+在连接归还到连接池时是否测试该连接.</li> <li>spring.datasource.test-while-idle
+当连接空闲时，是否执行连接测试.</li> <li>spring.datasource.time-between-eviction-runs-millis
+指定空闲连接检查、废弃连接清理、空闲连接池大小调整之间的操作时间间隔</li> <li>spring.datasource.transaction-isolation
+指定事务隔离级别，使用Hikari connection pool时指定</li> <li>spring.datasource.url
+指定JDBC URL.</li> <li>spring.datasource.use-disposable-connection-facade
+是否对连接进行包装，防止连接关闭之后被使用.</li> <li>spring.datasource.use-equals
+比较方法名时是否使用String.equals()替换==.</li> <li>spring.datasource.use-lock
+是否对连接操作加锁</li> <li>spring.datasource.username
+*<em>指定数据库名的用户名</em>.</li> <li>spring.datasource.validation-interval
+指定多少ms执行一次连接校验.</li> <li>spring.datasource.validation-query
+指定获取连接时连接校验的sql查询语句.</li> <li>spring.datasource.validation-query-timeout
+指定连接校验查询的超时时间.</li> <li>spring.datasource.validation-timeout
+设定连接校验的超时时间，当使用Hikari connection pool时指定</li> <li>spring.datasource.validator-class-name
+用来测试查询的validator全限定名.</li> <li>spring.datasource.xa.data-source-class-name
+指定数据源的全限定名.</li> <li>spring.datasource.xa.properties
+指定传递给XA data source的属性</li></ul> <h2 id="jpa-配置"><a href="#jpa-配置" class="header-anchor">#</a> JPA 配置</h2> <ul><li>spring.jpa.database
+指定目标数据库.</li> <li>spring.jpa.database-platform
+指定目标数据库的类型.</li> <li>spring.jpa.generate-ddl
+是否在启动时初始化schema，默认为false</li> <li>spring.jpa.hibernate.ddl-auto
+指定DDL mode (none, validate, update, create, create-drop). 当使用内嵌数据库时，默认是create-drop，否则为none.</li> <li>spring.jpa.hibernate.naming-strategy
+指定命名策略.</li> <li>spring.jpa.open-in-view
+是否注册OpenEntityManagerInViewInterceptor，绑定JPA EntityManager到请求线程中，默认为: true</li> <li>spring.jpa.properties
+添加额外的属性到JPA provider.</li> <li>spring.jpa.show-sql
+是否开启sql的log，默认为: false</li></ul> <h2 id="h2-设置"><a href="#h2-设置" class="header-anchor">#</a> h2 设置</h2> <ul><li>spring.h2.console.enabled
+是否开启控制台，默认为false</li> <li>spring.h2.console.path
+指定控制台路径，默认为: /h2-console</li></ul> <h1 id="cache-缓存配置"><a href="#cache-缓存配置" class="header-anchor">#</a> cache 缓存配置</h1> <h2 id="缓存通用配置"><a href="#缓存通用配置" class="header-anchor">#</a> 缓存通用配置</h2> <p>spring.cache.cache-names
+指定要创建的缓存的名称，逗号分隔(若该缓存实现支持的话)</p> <p>spring.cache.ehcache.config
+指定初始化EhCache时使用的配置文件的位置指定.</p> <p>spring.cache.guava.spec
+指定创建缓存要使用的spec，具体详见CacheBuilderSpec.</p> <p>spring.cache.hazelcast.config
+指定初始化Hazelcast时的配置文件位置</p> <p>spring.cache.infinispan.config
+指定初始化Infinispan时的配置文件位置.</p> <p>spring.cache.jcache.config
+指定jcache的配置文件.</p> <p>spring.cache.jcache.provider
+指定CachingProvider实现类的全限定名.</p> <p>spring.cache.type
+指定缓存类型</p> <h2 id="redis-配置"><a href="#redis-配置" class="header-anchor">#</a> redis 配置</h2> <p>spring.redis.database
+指定连接工厂使用的Database index，默认为: 0</p> <p>spring.redis.host
+指定Redis server host，默认为: localhost</p> <p>spring.redis.password
+指定Redis server的密码</p> <p>spring.redis.pool.max-active
+指定连接池最大的活跃连接数，-1表示无限，默认为8</p> <p>spring.redis.pool.max-idle
+指定连接池最大的空闲连接数，-1表示无限，默认为8</p> <p>spring.redis.pool.max-wait
+指定当连接池耗尽时，新获取连接需要等待的最大时间，以毫秒单位，-1表示无限等待</p> <p>spring.redis.pool.min-idle
+指定连接池中空闲连接的最小数量，默认为0</p> <p>spring.redis.port
+指定redis服务端端口，默认: 6379</p> <p>spring.redis.sentinel.master
+指定redis server的名称</p> <p>spring.redis.sentinel.nodes
+指定sentinel节点，逗号分隔，格式为host:port.</p> <p>spring.redis.timeout
+指定连接超时时间，毫秒单位，默认为0</p> <h1 id="springdata-nosql-配置"><a href="#springdata-nosql-配置" class="header-anchor">#</a> springdata NOSQL 配置</h1> <h2 id="elasticsearch-配置"><a href="#elasticsearch-配置" class="header-anchor">#</a> elasticsearch 配置</h2> <p>spring.data.elasticsearch.cluster-name
+指定es集群名称，默认: elasticsearch</p> <p>spring.data.elasticsearch.cluster-nodes
+指定es的集群，逗号分隔，不指定的话，则启动client node.</p> <p>spring.data.elasticsearch.properties
+指定要配置的es属性.</p> <p>spring.data.elasticsearch.repositories.enabled
+是否开启es存储，默认为: true</p> <p>spring.data.jpa.repositories.enabled
+是否开启JPA支持，默认为: true</p> <h2 id="mongodb-配置"><a href="#mongodb-配置" class="header-anchor">#</a> mongodb 配置</h2> <p>spring.mongodb.embedded.features
+指定要开启的特性，逗号分隔.</p> <p>spring.mongodb.embedded.version
+指定要使用的版本，默认: 2.6.10</p> <p>spring.data.mongodb.authentication-database
+指定鉴权的数据库名</p> <p>spring.data.mongodb.database
+指定mongodb数据库名</p> <p>spring.data.mongodb.field-naming-strategy
+指定要使用的FieldNamingStrategy.</p> <p>spring.data.mongodb.grid-fs-database
+指定GridFS database的名称.</p> <p>spring.data.mongodb.host
+指定Mongo server host.</p> <p>spring.data.mongodb.password
+指定Mongo server的密码.</p> <p>spring.data.mongodb.port
+指定Mongo server port.</p> <p>spring.data.mongodb.repositories.enabled
+是否开启mongodb存储，默认为true</p> <p>spring.data.mongodb.uri
+指定Mongo database URI.默认:mongodb://localhost/test</p> <p>spring.data.mongodb.username
+指定登陆mongodb的用户名.</p> <h2 id="restful配置"><a href="#restful配置" class="header-anchor">#</a> RESTful配置</h2> <p>spring.data.rest.base-path
+指定暴露资源的基准路径.</p> <p>spring.data.rest.default-page-size
+指定每页的大小，默认为: 20</p> <p>spring.data.rest.limit-param-name
+指定limit的参数名，默认为: size</p> <p>spring.data.rest.max-page-size
+指定最大的页数，默认为1000</p> <p>spring.data.rest.page-param-name
+指定分页的参数名，默认为: page</p> <p>spring.data.rest.return-body-on-create
+当创建完实体之后，是否返回body，默认为false</p> <p>spring.data.rest.return-body-on-update
+在更新完实体后，是否返回body，默认为false</p> <p>spring.data.rest.sort-param-name
+指定排序使用的key，默认为: sort</p> <h2 id="solr配置"><a href="#solr配置" class="header-anchor">#</a> solr配置</h2> <p>spring.data.solr.host
+指定Solr host，如果有指定了zk的host的话，则忽略。默认为: http://127.0.0.1:8983/solr</p> <p>spring.data.solr.repositories.enabled
+是否开启Solr repositories，默认为: true</p> <p>spring.data.solr.zk-host
+指定zk的地址，格式为HOST:PORT.</p> <h1 id="spring-security-配置"><a href="#spring-security-配置" class="header-anchor">#</a> spring security 配置</h1> <p>spring security是springboot支持的权限控制系统。</p> <p>security.basic.authorize-mode
+要使用权限控制模式.</p> <p>security.basic.enabled
+是否开启基本的鉴权，默认为true</p> <p>security.basic.path
+需要鉴权的path，多个的话以逗号分隔，默认为[/**]</p> <p>security.basic.realm
+HTTP basic realm 的名字，默认为Spring</p> <p>security.enable-csrf
+是否开启cross-site request forgery校验，默认为false.</p> <p>security.filter-order
+Security filter chain的order，默认为0</p> <p>security.headers.cache
+是否开启http头部的cache控制，默认为false.</p> <p>security.headers.content-type
+是否开启X-Content-Type-Options头部，默认为false.</p> <p>security.headers.frame
+是否开启X-Frame-Options头部，默认为false.</p> <p>security.headers.hsts
+指定HTTP Strict Transport Security (HSTS)模式(none, domain, all).</p> <p>security.headers.xss
+是否开启cross-site scripting (XSS) 保护，默认为false.</p> <p>security.ignored
+指定不鉴权的路径，多个的话以逗号分隔.</p> <p>security.oauth2.client.access-token-uri
+指定获取access token的URI.</p> <p>security.oauth2.client.access-token-validity-seconds
+指定access token失效时长.</p> <p>security.oauth2.client.additional-information.[key]
+设定要添加的额外信息.</p> <p>security.oauth2.client.authentication-scheme
+指定传输不记名令牌(bearer token)的方式(form, header, none,query)，默认为header</p> <p>security.oauth2.client.authorities
+指定授予客户端的权限.</p> <p>security.oauth2.client.authorized-grant-types
+指定客户端允许的grant types.</p> <p>security.oauth2.client.auto-approve-scopes
+对客户端自动授权的scope.</p> <p>security.oauth2.client.client-authentication-scheme
+传输authentication credentials的方式(form, header, none, query)，默认为header方式</p> <p>security.oauth2.client.client-id
+指定OAuth2 client ID.</p> <p>security.oauth2.client.client-secret
+指定OAuth2 client secret. 默认是一个随机的secret.</p> <p>security.oauth2.client.grant-type
+指定获取资源的access token的授权类型.</p> <p>security.oauth2.client.id
+指定应用的client ID.</p> <p>security.oauth2.client.pre-established-redirect-uri
+服务端pre-established的跳转URI.</p> <p>security.oauth2.client.refresh-token-validity-seconds
+指定refresh token的有效期.</p> <p>security.oauth2.client.registered-redirect-uri
+指定客户端跳转URI，多个以逗号分隔.</p> <p>security.oauth2.client.resource-ids
+指定客户端相关的资源id，多个以逗号分隔.</p> <p>security.oauth2.client.scope
+client的scope</p> <p>security.oauth2.client.token-name
+指定token的名称</p> <p>security.oauth2.client.use-current-uri
+是否优先使用请求中URI，再使用pre-established的跳转URI. 默认为true</p> <p>security.oauth2.client.user-authorization-uri
+用户跳转去获取access token的URI.</p> <p>security.oauth2.resource.id
+指定resource的唯一标识.</p> <p>security.oauth2.resource.jwt.key-uri
+JWT token的URI. 当key为公钥时，或者value不指定时指定.</p> <p>security.oauth2.resource.jwt.key-value
+JWT token验证的value. 可以是对称加密或者PEMencoded RSA公钥. 可以使用URI作为value.</p> <p>security.oauth2.resource.prefer-token-info
+是否使用token info，默认为true</p> <p>security.oauth2.resource.service-id
+指定service ID，默认为resource.</p> <p>security.oauth2.resource.token-info-uri
+token解码的URI.</p> <p>security.oauth2.resource.token-type
+指定当使用userInfoUri时，发送的token类型.</p> <p>security.oauth2.resource.user-info-uri
+指定user info的URI</p> <p>security.oauth2.sso.filter-order
+如果没有显示提供WebSecurityConfigurerAdapter时指定的Filter order.</p> <p>security.oauth2.sso.login-path
+跳转到SSO的登录路径默认为/login.</p> <p>security.require-ssl
+是否对所有请求开启SSL，默认为false.</p> <p>security.sessions
+指定Session的创建策略(always, never, if_required, stateless).</p> <p>security.user.name
+指定默认的用户名，默认为user.</p> <p>security.user.password
+默认的用户密码.</p> <p>security.user.role
+默认用户的授权角色.</p> <h1 id="消息中间件的配置"><a href="#消息中间件的配置" class="header-anchor">#</a> 消息中间件的配置</h1> <h2 id="activemq-配置"><a href="#activemq-配置" class="header-anchor">#</a> activemq 配置</h2> <p>spring.activemq.broker-url
+指定ActiveMQ broker的URL，默认自动生成.</p> <p>spring.activemq.in-memory
+是否是内存模式，默认为true.</p> <p>spring.activemq.password
+指定broker的密码.</p> <p>spring.activemq.pooled
+是否创建PooledConnectionFactory，而非ConnectionFactory，默认false</p> <p>spring.activemq.user
+指定broker的用户.</p> <h2 id="rabbitmq-配置"><a href="#rabbitmq-配置" class="header-anchor">#</a> rabbitmq 配置</h2> <p>spring.rabbitmq.addresses
+指定client连接到的server的地址，多个以逗号分隔.</p> <p>spring.rabbitmq.dynamic
+是否创建AmqpAdmin bean. 默认为: true)</p> <p>spring.rabbitmq.host
+指定RabbitMQ host.默认为: localhost)</p> <p>spring.rabbitmq.listener.acknowledge-mode
+指定Acknowledge的模式.</p> <p>spring.rabbitmq.listener.auto-startup
+是否在启动时就启动mq，默认: true)</p> <p>spring.rabbitmq.listener.concurrency
+指定最小的消费者数量.</p> <p>spring.rabbitmq.listener.max-concurrency
+指定最大的消费者数量.</p> <p>spring.rabbitmq.listener.prefetch
+指定一个请求能处理多少个消息，如果有事务的话，必须大于等于transaction数量.</p> <p>spring.rabbitmq.listener.transaction-size
+指定一个事务处理的消息数量，最好是小于等于prefetch的数量.</p> <p>spring.rabbitmq.password
+指定broker的密码.</p> <p>spring.rabbitmq.port
+指定RabbitMQ 的端口，默认: 5672)</p> <p>spring.rabbitmq.requested-heartbeat
+指定心跳超时，0为不指定.</p> <p>spring.rabbitmq.ssl.enabled
+是否开始SSL，默认: false)</p> <p>spring.rabbitmq.ssl.key-store
+指定持有SSL certificate的key store的路径</p> <p>spring.rabbitmq.ssl.key-store-password
+指定访问key store的密码.</p> <p>spring.rabbitmq.ssl.trust-store
+指定持有SSL certificates的Trust store.</p> <p>spring.rabbitmq.ssl.trust-store-password
+指定访问trust store的密码.</p> <p>spring.rabbitmq.username
+指定登陆broker的用户名.</p> <p>spring.rabbitmq.virtual-host
+指定连接到broker的Virtual host.</p> <h2 id="jms-配置"><a href="#jms-配置" class="header-anchor">#</a> jms 配置</h2> <p>spring.jms.jndi-name
+指定Connection factory JNDI 名称.</p> <p>spring.jms.listener.acknowledge-mode
+指定ack模式，默认自动ack.</p> <p>spring.jms.listener.auto-startup
+是否启动时自动启动jms，默认为: true</p> <p>spring.jms.listener.concurrency
+指定最小的并发消费者数量.</p> <p>spring.jms.listener.max-concurrency
+指定最大的并发消费者数量.</p> <p>spring.jms.pub-sub-domain
+是否使用默认的destination type来支持 publish/subscribe，默认: false</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">12/15/2023, 8:18:50 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/webkai-fa/spring-boot/shi-yong-pei-zhi/springboot-chang-yong-pei-zhi.html" class="prev">
+        02-SpringBoot 常用配置
+      </a></span> <span class="next"><a href="/webkai-fa/spring-cloud/sringcloud-ge-zu-jian-ji-cheng-yu-pei-zhi.html">
+        01-SringCloud 各组件集成与配置
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d9144f6d.js" defer></script><script src="/assets/js/2.37ae8396.js" defer></script><script src="/assets/js/103.15e1f1fe.js" defer></script>
+  </body>
+</html>
